@@ -4,4 +4,4 @@ Um simples jogo da velha desenvolvido com React.
 
 ### Demo
 
-Demonstração online em breve.
+Acessar demonstração online: [https://projects.fabiopichler.net/tic-tac-toe/](https://projects.fabiopichler.net/tic-tac-toe/)
