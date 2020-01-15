@@ -65,7 +65,7 @@ body {
 .footer-players > div {
     color: #777;
     border-bottom: 0px solid #777;
-    transition: color 1s, border-color 1s, border-width 200ms 400ms;
+    transition: color 1s, border-color 1s, border-width 200ms 300ms;
 }
 
 .footer-players > div.selected {
