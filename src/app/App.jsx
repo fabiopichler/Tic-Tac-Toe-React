@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from './Header';
-import Board from './Board';
-import Footer from './Footer';
+import Header from './header/Header';
+import Board from './board/Board';
+import Footer from './footer/Footer';
 
 const transpose = board => board[0].map((col, i) => board.map(row => row[i]));
 
