@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer: renders correctly 1`] = `
+<footer
+  className="footer my-4"
+>
+  <div
+    className="text-center mb-3"
+  >
+    <button
+      className="btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Reiniciar jogo
+    </button>
+  </div>
+  <div
+    className="text-center text-secondary small"
+  >
+    © 2020 Fábio Pichler
+  </div>
+</footer>
+`;
