@@ -4,11 +4,11 @@ import Header from './header/Header';
 import Board from './board/Board';
 import Footer from './footer/Footer';
 
-const transpose = board => board[0].map((col, i) => board.map(row => row[i]));
+export const transpose = board => board[0].map((col, i) => board.map(row => row[i]));
 
-const checkRow = (row, player) => row.filter(col => col === player).length === 3;
+export const checkRow = (row, player) => row.filter(col => col === player).length === 3;
 
-const checkRows = board => {
+export const checkRows = board => {
     for (const row of board)
         for (let player = 1; player <= 2; ++player)
             if (checkRow(row, player))
@@ -17,7 +17,7 @@ const checkRows = board => {
     return 0;
 }
 
-const checkDiagonals = board => {
+export const checkDiagonals = board => {
     const diagonals = [[], []];
 
     for (const index in board) {
@@ -28,7 +28,7 @@ const checkDiagonals = board => {
     return checkRows(diagonals);
 }
 
-const check = (board, round) => {
+export const check = (board, round) => {
     let player = checkRows(board);
 
     if (player === 0)
