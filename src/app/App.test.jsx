@@ -5,6 +5,7 @@ import App, {
     transpose,
     checkRow,
     checkRows,
+    checkDiagonals,
     check,
 } from './App';
 
@@ -31,6 +32,20 @@ test('checkRows', () => {
         [1, 1, 1],
         [0, 0, 0],
     ])).toEqual(1);
+});
+
+test('checkDiagonals', () => {
+    expect(checkDiagonals([
+        [1, 0, 0],
+        [0, 1, 0],
+        [0, 0, 1],
+    ])).toEqual(1);
+
+    expect(checkDiagonals([
+        [0, 0, 2],
+        [0, 2, 0],
+        [2, 0, 0],
+    ])).toEqual(2);
 });
 
 test('check', () => {
