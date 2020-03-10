@@ -20,13 +20,24 @@
     "react-scripts": "3.4.0"
   },
   "devDependencies": {
+    "open": "^7.0.3",
     "react-test-renderer": "^16.12.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "coverage": "yarn test --coverage --watchAll=false",
+    "postcoverage": "bin/open-coverage.js",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**",
+      "!src/**/__snapshots__/**",
+      "!src/(index.jsx|serviceWorker.js)",
+      "!/node_modules/**"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
